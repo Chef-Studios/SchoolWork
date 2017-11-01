@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="margin-top:0px;">
   <head>
     <title>Click</title>
     <meta charset="utf-8">
@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="/styles.css">
     <script src="/script.js" defer></script>
   </head>
-  <body>
-    <h1>Make the moneys!</h1>
-    <h2>
-      Points:
+  
+  <body style=" margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;padding-top:0px;">
+    <center>
+      <header>
+    <h1 style="color:blue;background-color:tomato;">Make the moneys!</h1>
+      </header>
+        <h2>
+      Points:<p id="points2">0</p>
     </h2>
-      <button style="text-align:center;" id="points2" onclick="addpoints()">
+      <button style="text-align:center;" onclick="addpoints()">
             Moneys
       </button>
+    </center>
     <script>
     var score = 0;
       var amountOfDollars =1;
