@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Make the moneys!</h1>
+    <h2>
+      Points:
+    </h2>
+      <button style="text-align:center;" id="points2" onclick="addpoints()">
+            Moneys
+      </button>
+    <script>
+    var score = 0;
+      var amountOfDollars =1;
+function addpoints() {
+  console.log("addpoints function");
+  score += amountOfDollars;
+ document.getElementById("points2").innerHTML = score;
+  
+
+      if (score== 20){
+        amountOfDollars +=9 ;
+        alert("Congrats")
+      }   
+  if (score== 200){
+        amountOfDollars +=10 ;
+        alert("Keep going!")
+  }   
+  if (score== 300){
+        amountOfDollars +=80 ;
+        alert("Doe")
+  }
+  if (score== 10000){
+        amountOfDollars +=900 ;
+        alert("You won")
+      }
+  if (score==400000){
+        amountOfDollars +=0 ;
+        alert("Congrats weirdo")
+      }
+}
+    </script>
+  </body>
+</html>
