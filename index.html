@@ -15,16 +15,14 @@
     margin-left: 0px;padding-top:0px;">
     <center>
       <header>
-    <h1 style="color:blue;background-color:tomato;">Make the moneys!</h1>
+    <div style="background-color:black;color:white; font-size:100px;">Make the moneys!</div>
       </header>
-        <h2>
-      Money:
-    </h2>
-      <button style="text-align:center;" onclick="addpoints()">
-            Moneys
+      <div style="padding-top:20px;">
+      <button style="text-align:center;font-size:50px;" onclick="addpoints()">
+            Make
       </button>
-      
-     <p style="font-size:400px;">$<a id="points2">0</a><p>
+    </div>
+     <p style="font-size:200px;">$<a id="points2">0</a><p>
       
       </p>
       
@@ -40,23 +38,23 @@ function addpoints() {
 
       if (score== 20){
         amountOfDollars +=9 ;
-        alert("Congrats")
+        setTimeout(function(){ alert("Congrats");},50);
       }   
   if (score== 200){
         amountOfDollars +=10 ;
-        alert("Keep going!")
+        setTimeout(function(){ alert("Getting Somewhere");},50);
   }   
   if (score== 300){
         amountOfDollars +=80 ;
-        alert("Doe")
+        setTimeout(function(){ alert("Progress Showing");},50);
   }
   if (score== 10000){
         amountOfDollars +=900 ;
-        alert("You won")
+        setTimeout(function(){ alert("Winning at life");},50);
       }
   if (score==400000){
         amountOfDollars +=0 ;
-        alert("Congrats weirdo")
+        setTimeout(function(){ alert("So much to buy.");},50);
       }
 }
     </script>
